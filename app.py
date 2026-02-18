@@ -3,6 +3,9 @@ import json
 import os
 import uuid
 
+port = int(os.environ.get("PORT", 10000))
+app.run(host="0.0.0.0", port=port)
+
 app = Flask(__name__)
 DATA_FILE = "tasks.json"
 
@@ -82,4 +85,5 @@ if __name__ == "__main__":
     @app.route("/tasks/reset", methods=["POST"])
     def reset_tasks():
       save_tasks([])
+
       return jsonify(success=True)
