@@ -1,0 +1,208 @@
+/* ==============================
+   RESET BÁSICO
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==============================
+   FUNDO STAR WARS
+============================== */
+body {
+    min-height: 100vh;
+    background: radial-gradient(ellipse at bottom, #111 0%, #000 100%);
+    color: #fff;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+}
+
+/* estrelas */
+.stars, .stars2, .stars3 {
+    position: fixed;
+    inset: 0;
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.stars {
+    background-image: radial-gradient(1px 1px at 20px 30px, #fff, transparent);
+    background-size: 200px 200px;
+    animation: moveStars 200s linear infinite;
+}
+
+.stars2 {
+    background-image: radial-gradient(1.5px 1.5px at 50px 80px, #fff, transparent);
+    background-size: 300px 300px;
+    animation: moveStars 400s linear infinite;
+    opacity: .6;
+}
+
+.stars3 {
+    background-image: radial-gradient(2px 2px at 90px 120px, #fff, transparent);
+    background-size: 400px 400px;
+    animation: moveStars 600s linear infinite;
+    opacity: .4;
+}
+
+@keyframes moveStars {
+    from { transform: translateY(0); }
+    to { transform: translateY(-2000px); }
+}
+
+/* ==============================
+   APP CONTAINER (CENTRO)
+============================== */
+.app {
+    max-width: 420px;
+    margin: 80px auto;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(250, 204, 21, 0.4);
+    box-shadow: 0 0 40px rgba(250, 204, 21, 0.15);
+}
+
+/* ==============================
+   LOGO (SUBSTITUI O H1)
+============================== */
+.title-logo {
+    display: block;
+    margin: 0 auto 24px auto;
+    max-width: 240px;
+    height: auto;
+    filter: drop-shadow(0 0 8px rgba(250, 204, 21, 0.6));
+}
+
+/* ==============================
+   INPUT + BOTÃO
+============================== */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 14px;
+    padding: 12px 14px;
+    color: #fff;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.4);
+}
+
+button {
+    background: transparent;
+    border: 1px solid #facc15;
+    color: #facc15;
+    border-radius: 14px;
+    padding: 0 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: rgba(250,204,21,0.15);
+}
+
+/* ==============================
+   LISTA DE TAREFAS
+============================== */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(0,0,0,0.4);
+}
+
+li.pinned {
+    border-left: 3px solid #facc15;
+}
+
+li span {
+    flex: 1;
+    font-size: 14px;
+}
+
+/* ==============================
+   AÇÕES
+============================== */
+.actions {
+    display: flex;
+    gap: 6px;
+}
+
+.actions button {
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* ==============================
+   ESTADO VAZIO
+============================== */
+.empty {
+    text-align: center;
+    opacity: 0.4;
+    font-size: 14px;
+    margin: 40px 0;
+}
+
+/* ==============================
+   RESET
+============================== */
+#reset {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px 0;
+
+    background: transparent;
+    border: 1px solid rgba(250, 204, 21, 0.6);
+    border-radius: 16px;
+
+    color: #facc15;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.25s ease;
+}
+
+#reset:hover {
+    opacity: 1;
+    background: rgba(250, 204, 21, 0.08);
+    box-shadow: 0 0 12px rgba(250, 204, 21, 0.25);
+}
+
+#reset:active {
+    transform: scale(0.97);
+}
+
+/* ==============================
+   STATUS BAR
+============================== */
+#status {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.6;
+}
