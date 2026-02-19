@@ -42,7 +42,7 @@ python main.py
 
 aparecera no terminal algo como:
 
- ## Running on http://127.0.0.1:5000
+ **Running on http://127.0.0.1:5000**
 
  ao aparecer, clique no link pressionando Crtl
 
