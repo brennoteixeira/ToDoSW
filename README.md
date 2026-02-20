@@ -135,9 +135,7 @@ star-wars-tasks/
 
 -  Modo Lado Sombrio / Lado da Força
 
--  Modo de idioma em inglês
-
--  Autenticação temática (Jedi / Sith)
+-  Modo de idioma em inglês  
 
 
 
