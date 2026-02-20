@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ## 4. Execute o projeto: 
 
-python main.py
+python app.py
 
 ## 5. Clique no link para acessar o site
 
