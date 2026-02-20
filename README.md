@@ -149,3 +149,13 @@ Desenvolvido por Brenno Teixeira
 Projeto criado para estudo, prática de front-end, UX e integração com backend.
 
 “Faça ou não faça. Tentativa não há.” — Mestre Yoda
+
+
+
+---
+
+
+
+## ⭐ Observação
+
+Feedbacks e sugestões são sempre bem-vindos!
